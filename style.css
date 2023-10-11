@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.444), rgba(0, 255, 229, 0.395)), url(back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;}
+  
+.field-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    text-align: center;
+}
+
+input::placeholder{
+font-style: italic;
+color: white;
+}
+.input-flex{
+    margin-top: 50px;
+}
+.input{
+    width: 20rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 2px solid white;
+    opacity: 1;
+    color: white;
+}
+.input:focus{
+    outline: none;
+}
+
+.button{
+    width: 7rem;
+    height: 2.4rem;
+    background-color: aqua;
+    border: none;
+    
+    font-weight: bold;
+
+
+}
