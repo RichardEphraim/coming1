@@ -16,6 +16,16 @@ $email = $_POST['email'];
 // Sanitize the form data
 $email = mysqli_real_escape_string($db, $email);
 
+$sql = "SELECT COUNT(*) AS count FROM users WHERE email = '$email'";
+$result = mysqli_query($db, $sql);
+$count = mysqli_fetch_assoc($result)['count'];
+
+// If the email already exists in the database, display an error message and exit
+if ($count > 0) {
+  header( 'Location: index3.html');
+  exit;
+}
+
 // Create an SQL INSERT statement to insert the form data into the database
 $sql = "INSERT INTO users (email) VALUES ('$email')";
 
@@ -26,7 +36,7 @@ $result = mysqli_query($db, $sql);
 if ($result === false) {
     echo 'Error inserting data into the database.';
 } else {
-    echo 'Data inserted successfully.';
+    header( 'Location: index2.html');
 }
 
 // Close the connection to the MySQL database

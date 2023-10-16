@@ -3,7 +3,7 @@ body{
     color: white;
     margin: 0;
     padding: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.444), rgba(0, 255, 229, 0.395)), url(back.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.444), rgba(208, 45, 45, 0.800)), url(back.jpg);
   background-repeat: no-repeat;
   background-size: cover;}
   
@@ -37,10 +37,21 @@ color: white;
 .button{
     width: 7rem;
     height: 2.4rem;
-    background-color: aqua;
+    background-color: rgb(168, 6, 6);
     border: none;
-    
+    color: white;
     font-weight: bold;
 
 
+}
+#preloader{
+    background: rgba(254, 254, 254, 0.695) url(loader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+.delay{
+    display: none;
 }
