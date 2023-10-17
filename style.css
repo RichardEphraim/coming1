@@ -55,3 +55,19 @@ color: white;
 .delay{
     display: none;
 }
+
+input[type="file"]{
+    
+}
+input[type="file"]::-webkit-file-upload-button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 7px;
+}
+
+label{
+text-align: center;
+border: 2px solid white;
+padding: 7px;
+}

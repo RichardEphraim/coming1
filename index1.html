@@ -5,21 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        const emailI = document.getElementById("email");
-
-emailI.addEventListener("blur", function() {
-  const email = emailI.value;
-
-  // Check if the email already exists in the database
-  // You can use an AJAX request to do this
-  if (emailExists(email)) {
-    // Display an error message on the HTML page
-    alert("Email address already exists.");
-  }
-});
-    </script>
+    
 </head>
+
+
 <body>
     <div id="preloader"></div>
 <div class="field-container">
@@ -29,7 +18,13 @@ emailI.addEventListener("blur", function() {
 
         <form action="connect.php" class="input-flex" method="post">
             <input type="email" id="email" class="input" placeholder="Enter Your Email..." maxlength="100" name="email" required>
+            
+            <input type="file" id="file" class="file"  required>
+          
+               
+          
             <button class="button" id="Button"> Notify Me</button>
+            
           </form>
     
     </div>

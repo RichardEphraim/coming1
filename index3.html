@@ -5,20 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        const emailI = document.getElementById("email");
-
-emailI.addEventListener("blur", function() {
-  const email = emailI.value;
-
-  // Check if the email already exists in the database
-  // You can use an AJAX request to do this
-  if (emailExists(email)) {
-    // Display an error message on the HTML page
-    alert("Email address already exists.");
-  }
-});
-    </script>
+    
 </head>
 <body>
     <div id="preloader"></div>
